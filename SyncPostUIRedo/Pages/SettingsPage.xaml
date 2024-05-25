@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SyncPostUI.Pages.SettingsPage"
+             Title="SettingsPage">
+
+
+
+
+    <VerticalStackLayout>
+        <StackLayout Padding="10" Spacing="25" IsVisible="True" x:Name="A">
+            <Label x:Name="SettingsLabel1" Text="Change Password" FontSize="Medium">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Label1Tapped" />
+                </Label.GestureRecognizers>
+            </Label>
+            <StackLayout x:Name="SettingsLayout1"
+                 Padding="30,0"
+                 Spacing="25"
+                 IsVisible="False">
+                <Label Text="Old Password" />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Entry x:Name="OldPassword" Grid.Column="0" Placeholder="Old Password" IsPassword="True" AutomationId="OldPasswordEntry" />
+
+                    <Button Text="Show/Hide" Grid.Column="1" Clicked="btnShowOldPassword" />
+                </Grid>
+
+                <Label Text="New Password" />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Entry x:Name="NewPassword" Grid.Column="0" Placeholder="New Password" IsPassword="True" AutomationId="NewPasswordEntry" />
+
+                    <Button Text="Show/Hide" Grid.Column="1" Clicked="btnShowNewPassword" />
+                </Grid>
+                <Button x:Name="ChangePasswordButton" Clicked="btnChangePassword"></Button>
+            </StackLayout>
+        </StackLayout>
+        
+        <StackLayout Padding="10" Spacing="25" IsVisible="True">
+            <Label x:Name="SettingsLabel2" Text="Connections" FontSize="Medium">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Label1Tapped" />
+                </Label.GestureRecognizers>
+
+            </Label>
+            <StackLayout x:Name="SettingsLayout2"
+                 Padding="30,0"
+                 Spacing="25"
+                 IsVisible="False">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="btnFacebookClick" Text="Link to Facebook" Grid.Column="0" Clicked="btnFacebookClick_Clicked"/>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+
+    </VerticalStackLayout>
+
+
+
+</ContentPage>

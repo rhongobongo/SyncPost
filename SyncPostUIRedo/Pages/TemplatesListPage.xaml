@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SyncPostUI.Pages.TemplatesListPage"
+             Title="Template List">
+    <ContentPage.Content>
+        <Grid Padding="30,30">
+            <!-- Main content -->
+            <StackLayout
+                Spacing="5">
+                <Label Text="Search"></Label>
+                <Entry x:Name="searchEntry" Placeholder="Search..." TextChanged="OnSearchTextChanged" />
+
+                <!-- Adjust the properties as needed -->
+                <Grid ColumnSpacing="20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="45*" />
+                        <ColumnDefinition Width="45*" />
+                        <ColumnDefinition Width="10*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Picker x:Name="searchPicker" Grid.Column="0" Title="Search with">
+                        <Picker.Items>
+                            <x:String>Name</x:String>
+                            <x:String>Tags</x:String>
+                            <x:String>Content</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+
+                    <Picker x:Name="sortPicker" Grid.Column="1" Title="Sort by">
+                        <Picker.Items>
+                            <x:String>Chronologically</x:String>
+                            <x:String>Alphabetically</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+
+
+                    <Grid Grid.Column="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Row="0" Text="Reversed Order" />
+                        <Switch x:Name="reverseSwitch" Grid.Row="2" IsToggled="False" Toggled="OnReverseToggled"></Switch>
+                    </Grid>
+
+                </Grid>
+
+
+                <ListView x:Name="TemplatesListView"
+                  ItemsSource="{Binding Templates}"
+                  HasUnevenRows="True"
+                  ItemTapped="OnTemplateTapped">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid RowSpacing="10">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <Label Text="{Binding Title}" Grid.Row="0" />
+                                    <!-- Date -->
+                                    <Label Text="{Binding last_modification_date, StringFormat='Last Modification Date: {0:MM/dd/yyyy HH:mm:ss}'}" Grid.Row="1" />
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+
+            <!-- Anchor button to bottom right corner -->
+            <Button
+            WidthRequest="75"
+            HeightRequest="75"
+            HorizontalOptions="End"
+            VerticalOptions="End"
+            Margin="0,0,20,20"
+            x:Name="btnCreateTemplate_"
+            BackgroundColor="{DynamicResource SecondaryDarkText}"
+            Clicked="btnCreateTemplate_Clicked"
+            Text="+"
+            FontSize="Large"
+            />
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

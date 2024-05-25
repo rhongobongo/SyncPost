@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SyncPostUI.Pages.RegistrationPage"
+             Title="RegistrationPage">
+    <VerticalStackLayout
+    Padding="30,0"
+    Spacing="25">
+        <Label 
+     Text="SyncPost"
+     FontSize="Large"
+     HorizontalOptions="Center" />
+        <Label 
+        Text="Username"
+        FontSize="Medium"
+        HorizontalOptions="Center" />
+        <Entry x:Name="UsernameEntry" Placeholder=""></Entry>
+        <Label 
+        Text="Password"
+        FontSize="Medium"
+        HorizontalOptions="Center"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Entry x:Name="PasswordEntry" Grid.Column="0" Placeholder="" IsPassword="True" />
+            <Button Text="Show/Hide" Grid.Column="1" Clicked="btnShowPass" />
+        </Grid>
+        <Button  x:Name="RegisterButton" Text="Register" Clicked="btnRegister"></Button>
+        <Button x:Name="BackToLoginButton" Text="Back to Login" Clicked="btnLoginPage"></Button>
+    </VerticalStackLayout>
+</ContentPage>

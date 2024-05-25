@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SyncPostUI.Pages.TemplateNewEditorPage"
+             Title="New Template Editor">
+    <Grid Padding="30,0,30,20"
+            RowSpacing="25">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Row for Template Title -->
+            <RowDefinition Height="*"/>
+
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackLayout Grid.Row="0" Spacing="10">
+            <Label Text="Template Title" />
+            <Entry Placeholder="Enter Title" x:Name="entryTemplateTitle"/>
+        </StackLayout>
+
+        <!-- Template Content -->
+        <StackLayout Grid.Row="1" Spacing="10">
+            <Label Text="Template Content" />
+            <Editor VerticalOptions="FillAndExpand" x:Name="editorTemplateContent"/>
+            <!-- Adjust height as needed -->
+        </StackLayout>
+        
+        <StackLayout Grid.Row="2" Spacing="10">
+            <Label Text="Tags" />
+            <Entry VerticalOptions="FillAndExpand" x:Name="entryTags"/>
+        </StackLayout>
+        <!-- Buttons -->
+        <Grid Grid.Row="3" ColumnSpacing="25">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button Text="Create New Template" Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalOptions="Center" x:Name="btnNewSave" Clicked="btnNewSave_Clicked" />
+            <Button Text="Back to Template List" Grid.Column="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center" x:Name="btnCancel" Clicked="btnCancel_Clicked" />
+        </Grid>
+        <Button x:Name="btnSave" Grid.Row="3" Clicked="btnNewSave_Clicked" Text="Save"></Button>
+        <Button x:Name="btnPostingPage" Grid.Row="4" Clicked="btnPostingPage_Clicked" Text="Post"></Button>
+    </Grid>
+</ContentPage>

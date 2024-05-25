@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SyncPostUI.Services.AuthServices">
+    <Position X="2.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AhAAAAAAAAAAgEIAAAAAAAIAAAABAAAAAEAABAABAAA=</HashCode>
+      <FileName>Services\AuthServices.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SyncPostUI.Services.TemplateServices">
+    <Position X="13.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABQAAAAAAAAAEIAAAACAAACAAAAAAAAEEAABAAAAAA=</HashCode>
+      <FileName>Services\TemplateServices.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SyncPostUI.Services.FacebookServices">
+    <Position X="7.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAKQoAAAAAgAQAAAAAAAAAACAAAABACAAIAgAAAAAI=</HashCode>
+      <FileName>Services\FacebookServices.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SyncPostUI.Models.TokenModel" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\AuthModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SyncPostUI.Models.RegistrationModel" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\AuthModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SyncPostUI.Models.ChangePWModel" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\AuthModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SyncPostUI.Models.PictureData" Collapsed="true">
+    <Position X="7.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Models\PageModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SyncPostUI.Models.Picture" Collapsed="true">
+    <Position X="9.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PageModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SyncPostUI.Models.AccountData" Collapsed="true">
+    <Position X="6" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAQAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PageModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SyncPostUI.Models.PagingCursors" Collapsed="true">
+    <Position X="7.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAQAA=</HashCode>
+      <FileName>Models\PageModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SyncPostUI.Models.Paging" Collapsed="true">
+    <Position X="6" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PageModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SyncPostUI.Models.AccountsResponse" Collapsed="true">
+    <Position X="7.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PageModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SyncPostUI.Models.PageModel" Collapsed="true">
+    <Position X="9.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAEAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PageModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SyncPostUI.Models.TemplateModel" Collapsed="true">
+    <Position X="15" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAgAAAEAAAAAAAEAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TemplateModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SyncPostUI.Models.APITemplateModel" Collapsed="true">
+    <Position X="11.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAgAAAEAAAAAAAEAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TemplateModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SyncPostUI.Models.CreateTemplateModel" Collapsed="true">
+    <Position X="15" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Models\TemplateModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SyncPostUI.Models.ModifyTemplateModel" Collapsed="true">
+    <Position X="15" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAQAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Models\TemplateModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SyncPostUI.Models.DeleteTemplateModel" Collapsed="true">
+    <Position X="11.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Models\TemplateModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SyncPostUI.Models.CreatePostHistory" Collapsed="true">
+    <Position X="13.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAEABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TemplateModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SyncPostUI.Models.GetPostHistory" Collapsed="true">
+    <Position X="13.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAABEAAEABAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TemplateModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SyncPostUI.Models.PostHistory" Collapsed="true">
+    <Position X="11.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAABEAAEABAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TemplateModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

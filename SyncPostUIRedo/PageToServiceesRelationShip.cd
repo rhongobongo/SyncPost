@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SyncPostUI.Pages.MainPage">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAgAAECAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\MainPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_auth" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Microsoft.Maui.Controls.ContentPage" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="SyncPostUI.Pages.TemplatesListPage">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="SyncPostUI.Pages.TemplatesListPage.TemplatesListViewModel" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Pages\TemplatesListPage.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <AssociationLine Name="_templateService" Type="SyncPostUI.Services.TemplateServices" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.688" Y="5.146" />
+        <Point X="11.688" Y="9.878" />
+        <Point X="9.677" Y="9.878" Type="JumpStart" />
+        <Point X="9.511" Y="9.878" Type="JumpEnd" />
+        <Point X="3.75" Y="9.878" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="_authServices" Type="SyncPostUI.Services.AuthServices" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.125" Y="5.146" />
+        <Point X="11.125" Y="7.312" />
+        <Point X="9.677" Y="7.312" Type="JumpStart" />
+        <Point X="9.511" Y="7.312" Type="JumpEnd" />
+        <Point X="3.75" Y="7.312" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CgAAAAAAIAgAAAAABAAAAAAAAAAAIAAAAAIQAAAAAAA=</HashCode>
+      <FileName>Pages\TemplatesListPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_templateService" />
+      <Field Name="_authServices" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SyncPostUI.Pages.TemplateNewEditorPage">
+    <Position X="12.75" Y="2.5" Width="1.5" />
+    <AssociationLine Name="_templateService" Type="SyncPostUI.Services.TemplateServices" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.062" Y="4.31" />
+        <Point X="14.062" Y="10.476" />
+        <Point X="9.677" Y="10.476" Type="JumpStart" />
+        <Point X="9.511" Y="10.476" Type="JumpEnd" />
+        <Point X="3.75" Y="10.476" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="_authServices" Type="SyncPostUI.Services.AuthServices" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13" Y="4.31" />
+        <Point X="13" Y="7.812" />
+        <Point X="11.771" Y="7.812" Type="JumpStart" />
+        <Point X="11.605" Y="7.812" Type="JumpEnd" />
+        <Point X="9.677" Y="7.812" Type="JumpStart" />
+        <Point X="9.511" Y="7.812" Type="JumpEnd" />
+        <Point X="3.75" Y="7.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAABABAAAAAAAAAIgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\TemplateNewEditorPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_templateService" />
+      <Field Name="_authServices" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SyncPostUI.Services.AuthServices">
+    <Position X="2.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AhAAAAAAAAAAgEIAAAAAAAIAAAABAAAAAEAABAABAAA=</HashCode>
+      <FileName>Services\AuthServices.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SyncPostUI.Services.TemplateServices">
+    <Position X="2.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABQAAAAAAAAAEIAAAACAAACAAAAAAAAEEAABAAAAAA=</HashCode>
+      <FileName>Services\TemplateServices.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SyncPostUI.Pages.LoadingPage">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\LoadingPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_authService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SyncPostUI.Pages.LoginPage">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAABAAAAAIAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Pages\LoginPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_authServices" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SyncPostUI.Pages.SettingsPage">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <AssociationLine Name="_auth" Type="SyncPostUI.Services.AuthServices" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10" Y="5.464" />
+        <Point X="10" Y="6.75" />
+        <Point X="9.677" Y="6.75" Type="JumpStart" />
+        <Point X="9.511" Y="6.75" Type="JumpEnd" />
+        <Point X="3.75" Y="6.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="_fb" Type="SyncPostUI.Services.FacebookServices" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9.594" Y="5.464" />
+        <Point X="9.594" Y="12.812" />
+        <Point X="3.75" Y="12.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ABCAAAAAAEgAAEAAAAAAgBAAAAQAIIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\SettingsPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_auth" />
+      <Field Name="_fb" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SyncPostUI.Pages.RegistrationPage">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <AssociationLine Name="auth" Type="SyncPostUI.Services.AuthServices" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.5" Y="4.31" />
+        <Point X="6.5" Y="5.812" />
+        <Point X="4.833" Y="5.812" Type="JumpStart" />
+        <Point X="4.667" Y="5.812" Type="JumpEnd" />
+        <Point X="3.75" Y="5.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEEAAAAAAAEA=</HashCode>
+      <FileName>Pages\RegistrationPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="auth" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SyncPostUI.Pages.PostingPage">
+    <Position X="16.25" Y="2.5" Width="1.5" />
+    <AssociationLine Name="_templateService" Type="SyncPostUI.Services.TemplateServices" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.062" Y="6.107" />
+        <Point X="17.062" Y="11.737" />
+        <Point X="9.677" Y="11.737" Type="JumpStart" />
+        <Point X="9.511" Y="11.737" Type="JumpEnd" />
+        <Point X="3.75" Y="11.737" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="_authServices" Type="SyncPostUI.Services.AuthServices" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.375" Y="6.107" />
+        <Point X="16.375" Y="8.5" />
+        <Point X="14.927" Y="8.5" Type="JumpStart" />
+        <Point X="14.76" Y="8.5" Type="JumpEnd" />
+        <Point X="14.145" Y="8.5" Type="JumpStart" />
+        <Point X="13.979" Y="8.5" Type="JumpEnd" />
+        <Point X="11.771" Y="8.5" Type="JumpStart" />
+        <Point X="11.605" Y="8.5" Type="JumpEnd" />
+        <Point X="9.677" Y="8.5" Type="JumpStart" />
+        <Point X="9.511" Y="8.5" Type="JumpEnd" />
+        <Point X="3.75" Y="8.5" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="_fb" Type="SyncPostUI.Services.FacebookServices" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.438" Y="6.107" />
+        <Point X="17.438" Y="13.688" />
+        <Point X="3.75" Y="13.688" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AECAAAAAAAgAEAAIBAAAAAACAAAAIBAABAACACAABAE=</HashCode>
+      <FileName>Pages\PostingPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_templateService" />
+      <Field Name="_authServices" />
+      <Field Name="_fb" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SyncPostUI.Services.FacebookServices">
+    <Position X="2.25" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAKQoAAAAAgAQAAAAAAAAAACAAAABACAAIAgAAAAAI=</HashCode>
+      <FileName>Services\FacebookServices.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SyncPostUI.Pages.TemplateExistingEditorPage">
+    <Position X="14.5" Y="2.5" Width="1.5" />
+    <AssociationLine Name="_authServices" Type="SyncPostUI.Services.AuthServices" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.25" Y="5.79" />
+        <Point X="15.25" Y="8.125" />
+        <Point X="14.927" Y="8.125" Type="JumpStart" />
+        <Point X="14.76" Y="8.125" Type="JumpEnd" />
+        <Point X="14.145" Y="8.125" Type="JumpStart" />
+        <Point X="13.979" Y="8.125" Type="JumpEnd" />
+        <Point X="11.771" Y="8.125" Type="JumpStart" />
+        <Point X="11.605" Y="8.125" Type="JumpEnd" />
+        <Point X="9.677" Y="8.125" Type="JumpStart" />
+        <Point X="9.511" Y="8.125" Type="JumpEnd" />
+        <Point X="3.75" Y="8.125" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AQAAACAAAAgAAAAgBABAAAAAAAAAIgAABAAAAAACAAA=</HashCode>
+      <FileName>Pages\TemplateExistingEditorPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_templateService" />
+      <Field Name="_authServices" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

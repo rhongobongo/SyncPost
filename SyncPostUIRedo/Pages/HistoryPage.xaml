@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SyncPostUI.Pages.HistoryPage"
+             Title="History">
+    <ContentPage.Content>
+        <Grid Padding="30,30">
+            <!-- Main content -->
+            <StackLayout
+                Spacing="5">
+                <Label Text="Search"></Label>
+                <Entry x:Name="searchEntry" Placeholder="Search..." TextChanged="OnSearchTextChanged" />
+                <!-- Adjust the properties as needed -->
+                <Grid ColumnSpacing="20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50*" />
+                        <ColumnDefinition Width="50*" />
+                    </Grid.ColumnDefinitions>
+
+
+                    <Picker x:Name="sortPicker"  Grid.Column="0" Title="Sort by" SelectedIndexChanged="OnSortPickerSelectedIndexChanged">
+                        <Picker.Items>
+                            <x:String>Time Modified</x:String>
+                            <x:String>Alphabetical</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+
+                    <Grid Grid.Column="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Row="0" Text="Reversed Order" />
+                        <Switch x:Name="reverseSwitch" Grid.Row="2" IsToggled="False" Toggled="OnReverseToggled"></Switch>
+                    </Grid>
+
+                </Grid>
+
+
+                <ListView x:Name="TemplatesListView"
+                  ItemsSource="{Binding Templates}"
+                  HasUnevenRows="True"
+                  ItemTapped="OnTemplateTapped">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid RowSpacing="10">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <Label Text="{Binding PostContent}" Grid.Row="0" />
+                                    <!-- Date -->
+                                    <Label Text="{Binding PostDate, StringFormat='Post Date: {0:MM/dd/yyyy HH:mm:ss}'}" Grid.Row="1" />
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+
+            <!-- Anchor button to bottom right corner -->
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>
